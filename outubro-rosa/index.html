@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outubro Rosa na sua empresa: palestra em vídeo pronta | DUO SST</title>
+<link rel="icon" type="image/png" href="../assets/logo-d.png">
+<meta name="description" content="Palestra de cerca de 10 minutos sobre câncer de mama com a enfermeira do trabalho Gabriella Arcoverde: sinais de alerta, autoexame passo a passo e mitos e verdades. Pronta pra exibir na sua empresa. De R$ 99,90 por R$ 79,90.">
+<meta property="og:title" content="Outubro Rosa na sua empresa: palestra em vídeo pronta">
+<meta property="og:description" content="Informação, prevenção e acolhimento pra sua equipe. De R$ 99,90 por R$ 79,90.">
+<meta property="og:image" content="assets/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --rosa:#E5337A; --rosa-hover:#C81F62; --rosa-vivo:#FF5C9A; --blush:#FFE3EE; --blush-2:#FFF4F8;
+    --ameixa:#3B0F2A; --ameixa-2:#5B1740; --tinta:#26131F; --suave:#6B5562; --linha:#F2CADA;
+    --ok:#1E9E6A;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--tinta);background:#fff;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  .w{max-width:1140px;margin:0 auto;padding:0 20px}
+  h1,h2,h3{font-family:"Bricolage Grotesque",Inter,sans-serif;letter-spacing:-.02em;margin:0}
+  h2{font-size:clamp(32px,4.6vw,52px);line-height:1.02;font-weight:800}
+  .it{font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:500;letter-spacing:-.01em}
+  .rosa{color:var(--rosa)}
+  p{line-height:1.65;margin:0 0 14px}
+  .tag{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--rosa);margin-bottom:14px}
+  .tag::before{content:"";width:22px;height:2px;background:currentColor;border-radius:2px}
+  section{padding:96px 0}
+
+  /* CTA */
+  .cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--rosa);color:#fff;font-weight:800;font-size:18px;padding:20px 34px;border-radius:14px;text-decoration:none;border:0;cursor:pointer;box-shadow:0 14px 30px -12px rgba(229,51,122,.8),inset 0 -3px 0 rgba(0,0,0,.15);transition:transform .15s,background .15s;font-family:Inter,sans-serif}
+  .cta:hover{background:var(--rosa-hover);transform:translateY(-2px)}
+  .cta svg{width:20px;height:20px}
+  .cta-grande{font-size:20px;padding:23px 40px;width:100%;max-width:460px}
+  .micro{display:flex;gap:8px 18px;flex-wrap:wrap;font-size:13.5px;margin-top:16px;color:var(--suave)}
+  .micro span{display:inline-flex;align-items:center;gap:6px}
+  .micro svg{width:16px;height:16px;color:var(--ok)}
+  .cta-bloco{text-align:center;margin-top:44px}
+  .cta-bloco .micro{justify-content:center}
+
+  /* faixa topo */
+  .topo{background:var(--ameixa);color:#FFD1E2;text-align:center;font-size:13.5px;font-weight:600;padding:10px 16px;letter-spacing:.2px}
+  .topo b{color:#fff}
+
+  /* HERO */
+  .hero{position:relative;background:var(--ameixa);color:#fff;overflow:hidden;padding:0}
+  .hero-foto{position:absolute;inset:0;background:url(assets/hero.jpg) 70% center/cover}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,10,31,.97) 0%,rgba(52,13,37,.9) 40%,rgba(59,15,42,.35) 72%,rgba(59,15,42,.1) 100%)}
+  .hero .w{position:relative;z-index:1;padding-top:20px;padding-bottom:48px}
+  .marca{display:flex;align-items:center;gap:10px;margin-bottom:26px}
+  .marca img{width:260px;max-width:50vw;height:auto;display:block}
+  .voltar{white-space:nowrap}
+  @media (max-width:640px){.voltar{font-size:12.5px;padding:6px 11px}.marca img{max-width:44vw}}
+  .marca > a:first-child{flex:0 0 auto}
+  .marca span{font-size:13px;color:#F3CFDD;line-height:1.3}
+  .marca strong{display:block;color:#fff;font-size:14px}
+  .hero-txt{max-width:640px}
+  .pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,92,154,.16);border:1px solid rgba(255,92,154,.5);color:#FFC3DA;font-size:13px;font-weight:700;padding:6px 13px;border-radius:999px;margin-bottom:14px}
+  .pill svg{width:15px;height:15px}
+  .hero h1{font-size:clamp(38px,min(4.6vw,7.4vh),60px);line-height:1;font-weight:800;margin-bottom:14px}
+  .hero h1 .it{color:var(--rosa-vivo)}
+  .hero .sub{font-size:17.5px;color:#F6E3EA;max-width:560px;margin-bottom:20px}
+  .hero .sub b{color:#fff}
+  .compra{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+  .preco-hero{display:flex;align-items:center;gap:16px}
+  .de{color:#D9B3C3;text-decoration:line-through;font-size:17px}
+  .por{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:54px;line-height:1;letter-spacing:-.03em}
+  .por small{font-size:24px;margin-right:3px;letter-spacing:0}
+  .desconto{background:#fff;color:var(--rosa);font-weight:800;font-size:13px;padding:6px 11px;border-radius:8px;transform:rotate(-3deg)}
+  .hero .micro{color:#EBCBD7;margin-top:14px}
+  .hero .micro svg{color:#7FE3B8}
+
+  /* DOR */
+  .dor-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+  .dor-foto{border-radius:24px;overflow:hidden;position:relative;aspect-ratio:4/5;background:url(assets/rh.jpg) center/cover;box-shadow:0 40px 70px -40px rgba(59,15,42,.6)}
+  .dor-foto .balao{position:absolute;left:18px;right:18px;bottom:18px;background:#fff;border-radius:16px;padding:16px 18px;font-size:15px;font-weight:600;box-shadow:0 18px 30px -14px rgba(0,0,0,.4)}
+  .dor-foto .balao span{display:block;font-size:12px;color:var(--suave);font-weight:500;margin-top:4px}
+  .dores{list-style:none;padding:0;margin:26px 0 26px;display:grid;gap:14px}
+  .dores li{display:flex;gap:14px;align-items:flex-start;background:var(--blush-2);border:1px solid var(--linha);border-radius:14px;padding:16px 18px;line-height:1.5}
+  .dores .x{flex:none;width:26px;height:26px;border-radius:50%;background:#FFD6E4;color:var(--rosa-hover);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px}
+  .virada{font-size:20px;font-weight:600;line-height:1.5}
+  .virada b{color:var(--rosa)}
+
+  /* SOLUÇÃO / VÍDEO */
+  .solucao{background:var(--ameixa);color:#fff;position:relative;overflow:hidden}
+  .solucao::before{content:"";position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(229,51,122,.35),transparent 65%);right:-200px;top:-200px}
+  .solucao .w{position:relative}
+  .sol-head{text-align:center;max-width:760px;margin:0 auto 44px}
+  .sol-head .tag{color:var(--rosa-vivo)}
+  .sol-head p{color:#EBCBD7;font-size:18px;margin-top:16px}
+  .player{position:relative;max-width:900px;margin:0 auto;aspect-ratio:16/9;border-radius:22px;overflow:hidden;background:#24081a;box-shadow:0 50px 90px -40px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.08)}
+  .player iframe,.player video{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .player-bg{position:absolute;inset:0;background:url(assets/gabriella-capa.jpg) center/cover}
+  .player-selos{position:absolute;right:16px;bottom:16px;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+  .player-selos span{background:rgba(36,8,26,.82);color:#fff;font-size:13px;font-weight:700;padding:7px 12px;border-radius:999px}
+  .player-ui{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;background:linear-gradient(180deg,rgba(36,8,26,.2),rgba(36,8,26,.75))}
+  .play{width:92px;height:92px;border-radius:50%;background:var(--rosa);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 14px rgba(229,51,122,.25),0 0 0 28px rgba(229,51,122,.1);margin-bottom:22px;animation:pulsa 2.2s infinite}
+  .play svg{width:34px;height:34px;color:#fff;margin-left:6px}
+  @keyframes pulsa{50%{box-shadow:0 0 0 18px rgba(229,51,122,.18),0 0 0 36px rgba(229,51,122,.06)}}
+  .player-ui strong{font-size:19px}
+  .player-ui span{color:#F3CFDD;font-size:14px;margin-top:4px}
+  .rasc{position:absolute;top:16px;left:16px;background:#FFD43B;color:#3b2a00;font-size:11.5px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;padding:5px 10px;border-radius:6px;z-index:2}
+  .solucao .cta-bloco .micro{color:#EBCBD7}
+  .solucao .micro svg{color:#7FE3B8}
+
+  /* PILARES */
+  .pil-head{max-width:720px;margin-bottom:48px}
+  .pilares{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .pilar{border-radius:24px;padding:34px 30px 30px;position:relative;overflow:hidden;min-height:340px;display:flex;flex-direction:column}
+  .pilar:nth-child(1){background:var(--blush)}
+  .pilar:nth-child(2){background:var(--rosa);color:#fff}
+  .pilar:nth-child(3){background:var(--ameixa);color:#fff}
+  .pilar .num{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:15px;opacity:.6;margin-bottom:auto}
+  .pilar .ic{width:58px;height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin:26px 0 18px;background:rgba(255,255,255,.7)}
+  .pilar:nth-child(2) .ic,.pilar:nth-child(3) .ic{background:rgba(255,255,255,.14)}
+  .pilar .ic svg{width:30px;height:30px}
+  .pilar:nth-child(1) .ic svg{color:var(--rosa)}
+  .pilar h3{font-size:32px;font-weight:800;margin-bottom:10px}
+  .pilar p{margin:0;font-size:15.5px;opacity:.92}
+
+  /* CONTEÚDO */
+  .conteudo{background:var(--blush-2)}
+  .cont-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:start}
+  .cont-grid .sticky{position:sticky;top:30px}
+  .topicos{list-style:none;margin:0;padding:0;counter-reset:c;display:grid;gap:12px}
+  .topicos li{counter-increment:c;display:flex;gap:18px;align-items:center;background:#fff;border-radius:16px;padding:20px 22px;font-weight:600;font-size:16.5px;line-height:1.4;border:1px solid var(--linha)}
+  .topicos li::before{content:counter(c,decimal-leading-zero);font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:26px;color:var(--rosa);flex:none;width:40px}
+  .nota{font-size:14px;color:var(--suave);margin-top:16px}
+
+  /* COMO FUNCIONA */
+  .passos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px;position:relative}
+  .passo{text-align:center;padding:0 10px}
+  .passo .n{width:64px;height:64px;border-radius:50%;background:var(--blush);color:var(--rosa);font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:26px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;border:3px solid #fff;box-shadow:0 0 0 2px var(--linha)}
+  .passo h3{font-size:22px;margin-bottom:8px}
+  .passo p{color:var(--suave);font-size:15.5px}
+  .usos{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:40px}
+  .usos span{background:var(--blush-2);border:1px solid var(--linha);padding:10px 16px;border-radius:999px;font-weight:600;font-size:14.5px}
+
+  .player-legenda{text-align:center;color:#EBCBD7;font-size:14.5px;margin:16px 0 0}
+
+  /* QUEM APRESENTA */
+  .quem-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+  .quem-foto{aspect-ratio:4/5;border-radius:24px;background:#0F1A2B url(assets/gabriela-retrato.jpg) center top/cover;box-shadow:0 40px 70px -40px rgba(59,15,42,.6)}
+  .quem-bio{font-size:18px;color:var(--suave);margin-top:18px}
+  .quem blockquote{margin:24px 0 0;padding:22px 24px;background:var(--blush-2);border-left:4px solid var(--rosa);border-radius:0 16px 16px 0;font-family:Fraunces,Georgia,serif;font-style:italic;font-size:22px;line-height:1.4;color:var(--tinta)}
+  @media (max-width:960px){.quem-grid{grid-template-columns:1fr;gap:32px}.quem-foto{max-width:420px;width:100%}}
+
+  /* COMPARAÇÃO */
+  .comparar{background:var(--blush-2)}
+  .tabela{max-width:880px;margin:44px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .col{border-radius:22px;padding:30px 28px}
+  .col h3{font-size:22px;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+  .col ul{list-style:none;margin:0;padding:0;display:grid;gap:13px}
+  .col li{display:flex;gap:11px;line-height:1.45;font-size:15.5px}
+  .col li svg{width:20px;height:20px;flex:none;margin-top:1px}
+  .col-a{background:#fff;border:1px solid #EADDE3;color:var(--suave)}
+  .col-a li svg{color:#C9A3B3}
+  .col-b{background:var(--ameixa);color:#fff;box-shadow:0 30px 60px -30px rgba(59,15,42,.7);position:relative}
+  .col-b li svg{color:var(--rosa-vivo)}
+  .col-b .selo{position:absolute;top:-13px;right:22px;background:var(--rosa);color:#fff;font-size:12px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+
+  /* OFERTA */
+  .oferta{background:linear-gradient(170deg,var(--ameixa) 0%,var(--ameixa-2) 55%,#8E1F55 100%);color:#fff}
+  .of-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+  .of-txt .tag{color:var(--rosa-vivo)}
+  .of-txt p{color:#EBCBD7;font-size:17px}
+  .of-foto{border-radius:20px;overflow:hidden;aspect-ratio:4/3;background:url(assets/acolhimento.jpg) center/cover;margin-top:26px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+  .card{background:#fff;color:var(--tinta);border-radius:28px;padding:40px 36px 34px;position:relative;box-shadow:0 50px 90px -40px rgba(0,0,0,.7)}
+  .card .faixa{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--rosa);color:#fff;font-weight:800;font-size:13px;letter-spacing:.6px;text-transform:uppercase;padding:8px 18px;border-radius:999px;white-space:nowrap}
+  .card h3{font-size:24px;text-align:center;margin-bottom:22px}
+  .kit{list-style:none;margin:0 0 26px;padding:0;display:grid;gap:12px}
+  .kit li{display:flex;gap:12px;align-items:flex-start;line-height:1.45;padding-bottom:12px;border-bottom:1px dashed var(--linha)}
+  .kit li:last-child{border:0;padding-bottom:0}
+  .kit svg{width:22px;height:22px;color:var(--ok);flex:none;margin-top:1px}
+  .kit small{display:block;color:var(--suave);font-size:13.5px}
+  .card-preco{text-align:center;margin-bottom:22px}
+  .card-preco .de{color:#A68796;font-size:18px}
+  .card-preco .por{display:block;color:var(--rosa);font-size:78px;margin:4px 0}
+  .card-preco .por small{font-size:32px}
+  .card-preco .obs{font-size:14px;color:var(--suave)}
+  .card .cta{width:100%}
+  .card .micro{justify-content:center}
+  .garantia{display:flex;gap:16px;align-items:center;margin-top:24px;padding:18px;background:var(--blush-2);border-radius:16px}
+  .garantia .sel{flex:none;width:66px;height:66px;border-radius:50%;background:var(--ameixa);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:"Bricolage Grotesque",sans-serif;line-height:1;box-shadow:0 0 0 4px #fff,0 0 0 6px var(--rosa)}
+  .garantia .sel b{font-size:26px}
+  .garantia .sel span{font-size:10px;font-weight:600;letter-spacing:.5px;text-transform:uppercase}
+  .garantia p{margin:0;font-size:14px;line-height:1.5;color:var(--suave)}
+  .garantia p b{color:var(--tinta)}
+  .perso{margin-top:18px;text-align:center;font-size:14.5px;color:#EBCBD7}
+  .perso a{color:#fff;font-weight:700}
+
+  /* BÔNUS */
+  .bonus{background:var(--blush-2)}
+  .bonus-head{text-align:center;max-width:720px;margin:0 auto 46px}
+  .bonus-head p{margin-top:16px;color:var(--suave);font-size:17px}
+  .bonus-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .bonus-card{background:#fff;border:1px solid var(--linha);border-radius:24px;overflow:hidden;display:flex;flex-direction:column}
+  .bonus-img{position:relative;aspect-ratio:4/3;background:var(--ameixa);display:flex;align-items:flex-end;justify-content:center;gap:16px;padding:26px 26px 0;overflow:hidden}
+  .bonus-img img{display:block;width:44%;border-radius:8px 8px 0 0;box-shadow:0 20px 40px -18px rgba(0,0,0,.55)}
+  .bonus-img img.um{width:58%}
+  .bonus-img .rot{position:absolute;top:16px;left:16px;background:var(--rosa);color:#fff;font-size:12px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+  .bonus-txt{padding:26px 28px 30px}
+  .bonus-txt h3{font-size:22px;margin-bottom:8px}
+  .bonus-txt>p{color:var(--suave);line-height:1.5;margin:0 0 14px}
+  .bonus-txt ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+  .bonus-txt li{display:flex;gap:10px;align-items:flex-start;line-height:1.4;font-size:15px}
+  .bonus-txt li svg{width:18px;height:18px;color:var(--ok);flex:none;margin-top:2px}
+  .bonus .cta-bloco{text-align:center;margin-top:40px}
+  .kit li.b svg{color:var(--rosa)}
+  .kit li.b b::before{content:"Bônus: ";color:var(--rosa)}
+  @media (max-width:820px){.bonus-grid{grid-template-columns:1fr}}
+
+  /* FAQ */
+  .faq{max-width:800px;margin:40px auto 0}
+  .faq details{background:#fff;border:1px solid var(--linha);border-radius:16px;margin-bottom:12px;padding:0 22px}
+  .faq summary{cursor:pointer;list-style:none;padding:20px 0;font-weight:700;font-size:17px;display:flex;justify-content:space-between;gap:16px;align-items:center}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"";flex:none;width:28px;height:28px;border-radius:50%;background:var(--blush) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E5337A' stroke-width='3' stroke-linecap='round'%3E%3Cpath d='M12 6v12M6 12h12'/%3E%3C/svg%3E") center/14px no-repeat;transition:transform .2s}
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq details p{color:var(--suave);padding-bottom:20px;margin:0}
+
+  /* FINAL */
+  .final{background:var(--rosa);color:#fff;text-align:center;padding:90px 0}
+  .final h2{max-width:800px;margin:0 auto 18px}
+  .final p{font-size:19px;color:#FFE3EE;max-width:600px;margin:0 auto 32px}
+  .final .cta{background:#fff;color:var(--rosa);box-shadow:0 18px 36px -14px rgba(59,15,42,.6)}
+  .final .cta:hover{background:var(--ameixa);color:#fff}
+  .final .micro{justify-content:center;color:#FFE3EE}
+  .final .micro svg{color:#fff}
+
+  footer{background:#1E0816;color:#B898A8;font-size:13px;padding:34px 0 40px;text-align:center;line-height:1.7}
+  footer .aviso{max-width:720px;margin:0 auto 14px;color:#D5BAC6}
+  footer a{color:#F3CFDD}
+
+  /* barra fixa celular */
+  .barra{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;padding:10px 14px calc(10px + env(safe-area-inset-bottom));display:none;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -10px 30px -12px rgba(0,0,0,.3);transform:translateY(110%);transition:transform .25s}
+  .barra.on{transform:none}
+  .barra s{display:block;font-size:12px;color:#A68796}
+  .barra b{font-family:"Bricolage Grotesque",sans-serif;font-size:25px;color:var(--rosa)}
+  .barra .cta{padding:14px 20px;font-size:15.5px}
+
+  .toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,30px);opacity:0;pointer-events:none;background:var(--tinta);color:#fff;padding:14px 20px;border-radius:12px;font-size:14.5px;max-width:min(92vw,460px);text-align:center;z-index:60;transition:all .25s}
+  .toast.on{opacity:1;transform:translate(-50%,0)}
+
+  @media (max-width:960px){
+    .dor-grid,.cont-grid,.of-grid{grid-template-columns:1fr;gap:40px}
+    .cont-grid .sticky{position:static}
+    .pilares{grid-template-columns:1fr}
+    .pilar{min-height:0}
+    .dor-foto{aspect-ratio:4/3.4;background-position:center 30%}
+  }
+  @media (max-width:640px){
+    section{padding:68px 0}
+    .hero-foto{background-position:68% center}
+    .hero::after{background:linear-gradient(180deg,rgba(43,10,31,.55) 0%,rgba(43,10,31,.9) 45%,rgba(43,10,31,.97) 100%)}
+    .marca{margin-bottom:120px}
+    .hero .w{padding-bottom:60px}
+    .hero .cta{width:100%}
+    .passos,.tabela{grid-template-columns:1fr}
+    .passos{gap:34px}
+    .card{padding:36px 20px 26px}
+    .card-preco .por{font-size:64px}
+    .barra{display:flex}
+    footer{padding-bottom:100px}
+  }
+
+  /* ===== interações ===== */
+  html,body{overflow-x:clip}
+  @media (min-width:961px){.compra{flex-wrap:nowrap;width:max-content}}
+  .cta-sec{display:inline-flex;align-items:center;gap:12px;color:#fff;font-weight:700;font-size:16px;text-decoration:none;padding:12px 6px;position:relative}
+  .cta-sec::after{content:"";position:absolute;left:6px;right:58px;bottom:8px;height:2px;background:var(--rosa-vivo);transform:scaleX(.35);transform-origin:left;transition:transform .3s}
+  .cta-sec:hover::after{transform:scaleX(1)}
+  .cta-sec .seta{width:40px;height:40px;border-radius:50%;border:1.5px solid rgba(255,255,255,.45);display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s}
+  .cta-sec .seta svg{width:18px;height:18px;animation:desce 1.6s ease-in-out infinite}
+  .cta-sec:hover .seta{background:var(--rosa);border-color:var(--rosa)}
+  @keyframes desce{0%,100%{transform:translateY(-2px)}50%{transform:translateY(4px)}}
+
+  /* brilho passando no botão principal */
+  .cta{position:relative;overflow:hidden;isolation:isolate}
+  .cta::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);animation:brilho 3.6s ease-in-out infinite;z-index:-1;pointer-events:none}
+  .final .cta::after{background:linear-gradient(100deg,transparent,rgba(229,51,122,.25),transparent)}
+  @keyframes brilho{0%,55%{left:-60%}85%,100%{left:130%}}
+
+  /* palavras em destaque com sublinhado que se desenha */
+  .it.rosa,.hero h1 .it,.solucao h2 .it,.oferta h2 .it{background-image:linear-gradient(90deg,currentColor,currentColor);background-repeat:no-repeat;background-size:0% 3px;background-position:0 92%;transition:background-size 1s .3s cubic-bezier(.2,.8,.2,1)}
+  .in-view .it,.hero.ok .it{background-size:100% 3px}
+
+  /* entrada ao rolar (só com JS ativo) */
+  .js .rv{opacity:0;transform:translateY(34px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1);transition-delay:var(--d,0s)}
+  .js .rv.in{opacity:1;transform:none}
+  .js .rv-esq{transform:translateX(-40px)}
+  .js .rv-dir{transform:translateX(40px)}
+
+  /* hero entra em sequência */
+  .js .hero-txt>*{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s cubic-bezier(.2,.8,.2,1)}
+  .js .hero.ok .hero-txt>*{opacity:1;transform:none}
+  .hero.ok .hero-txt>*:nth-child(2){transition-delay:.1s}
+  .hero.ok .hero-txt>*:nth-child(3){transition-delay:.2s}
+  .hero.ok .hero-txt>*:nth-child(4){transition-delay:.3s}
+  .hero.ok .hero-txt>*:nth-child(5){transition-delay:.4s}
+  .hero-foto{transform:scale(1.08);transition:transform 6s ease-out}
+  .hero.ok .hero-foto{transform:scale(1)}
+
+  /* pilares: inclinação 3D + luz seguindo o mouse */
+  .pilares{perspective:1000px}
+  .pilar{transition:transform .25s ease,box-shadow .25s,opacity .7s;will-change:transform}
+  .pilar::after{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.28),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+  .pilar:hover::after{opacity:1}
+  .pilar:hover{box-shadow:0 30px 60px -28px rgba(59,15,42,.55)}
+  .pilar .ic{transition:transform .35s cubic-bezier(.3,1.6,.5,1)}
+  .pilar:hover .ic{transform:scale(1.12) rotate(-6deg)}
+
+  /* cartões e listas com resposta ao mouse */
+  .dores li:hover{transform:translateX(8px);border-color:var(--rosa)}
+  .dores li:hover .x{background:var(--rosa);color:#fff}
+  .dores .x{transition:background .2s,color .2s}
+  .topicos li:hover{transform:translateX(10px);border-color:var(--rosa);box-shadow:0 14px 26px -18px rgba(229,51,122,.6)}
+  .topicos li::before{transition:transform .3s}
+  .topicos li:hover::before{transform:scale(1.18)}
+  .passo .n{transition:transform .35s cubic-bezier(.3,1.6,.5,1),background .25s,color .25s}
+  .passo:hover .n{transform:translateY(-6px) scale(1.08);background:var(--rosa);color:#fff}
+  .usos span:hover{transform:translateY(-3px);background:#fff;border-color:var(--rosa)}
+  .col:hover{transform:translateY(-6px)}
+  .col-b:hover{box-shadow:0 40px 70px -30px rgba(229,51,122,.6)}
+  .faq details:hover{border-color:var(--rosa)}
+  .faq details[open]{box-shadow:0 16px 30px -22px rgba(59,15,42,.4)}
+  .dores li,.topicos li,.col,.faq details,.usos span{transition:transform .25s ease,box-shadow .25s,border-color .25s,background .25s,opacity .7s}
+  .js .rv.in.dores-li-fix{transition-delay:0s}
+  .card{transition:transform .3s ease,opacity .7s}
+  .dor-foto,.of-foto{transition:transform .5s ease,opacity .7s}
+  .dor-foto.in:hover,.of-foto.in:hover{transform:scale(1.02) rotate(-.6deg)}
+  .garantia .sel{animation:gira 8s linear infinite}
+  @keyframes gira{0%,90%{transform:rotate(0)}95%{transform:rotate(-8deg)}100%{transform:rotate(0)}}
+  .card .faixa{animation:balanca 3s ease-in-out infinite}
+  @keyframes balanca{0%,100%{transform:translateX(-50%) rotate(0)}50%{transform:translateX(-50%) rotate(-2deg)}}
+
+
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+    .js .rv,.js .hero-txt>*{opacity:1!important;transform:none!important}
+  }
+  @media (max-width:640px){
+    .cta-sec{width:100%;justify-content:center}
+    .cta-sec::after{display:none}
+  }
+  .marca{justify-content:space-between}
+  .voltar{color:#fff;font-size:14px;font-weight:600;text-decoration:none;background:rgba(43,10,31,.55);padding:7px 14px;border-radius:999px}
+  .voltar:hover{color:#fff;text-decoration:underline}
+</style>
+</head>
+<body>
+
+<div class="topo">🎀 <b>Outubro Rosa é agora.</b> Garanta a ação da sua empresa ainda este mês.</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-foto" role="img" aria-label="Equipe reunida numa sala assistindo a uma palestra, com laços rosa na roupa"></div>
+  <div class="w">
+    <div class="marca">
+      <a href="../index.html"><img src="assets/logo-branco.png" alt="DUO SST · Consultoria, meio ambiente, capacitação e perícias"></a>
+      <a class="voltar" href="../palestras.html">← Todas as palestras</a>
+    </div>
+    <div class="hero-txt">
+      <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="m10 9 5 3-5 3z"/></svg>Palestra corporativa em vídeo</span>
+      <h1>A ação de Outubro Rosa da sua empresa, <span class="it">pronta pra dar o play</span></h1>
+      <p class="sub">Cerca de 10 minutos com a enfermeira do trabalho <b>Gabriella Arcoverde</b>: sinais de alerta, autoexame passo a passo e mitos e verdades. Pra mulheres e homens. <b>Você só aperta o play.</b></p>
+      <div class="compra">
+        <div class="preco-hero">
+          <div><div class="de">De R$ 99,90</div><div class="por"><small>R$</small>79,90</div></div>
+        </div>
+        <a href="#oferta" class="cta">Quero na minha empresa
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#descobrir" class="cta-sec">Descubra como funciona
+          <span class="seta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span></a>
+      </div>
+      <div class="micro">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Pagamento único</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Garantia de 7 dias</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Compra segura pela Kiwify</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- DOR -->
+<section id="descobrir">
+  <div class="w dor-grid">
+    <div class="dor-foto" role="img" aria-label="Gestora de RH pensativa diante do notebook, com calendário de outubro na mesa">
+      <div class="balao">"Outubro chegou e a gente ainda não preparou nada…"<span>Toda empresa, todo ano</span></div>
+    </div>
+    <div>
+      <span class="tag">Você conhece essa cena</span>
+      <h2>Todo outubro é a mesma <span class="it rosa">correria</span></h2>
+      <ul class="dores">
+        <li><span class="x">✕</span><span>O RH quer fazer uma ação de verdade, mas acaba ficando só no laço rosa colado no mural.</span></li>
+        <li><span class="x">✕</span><span>Trazer palestrante custa caro, depende de agenda e ainda tem deslocamento e organização.</span></li>
+        <li><span class="x">✕</span><span>Falar de saúde da mulher exige cuidado: um tom errado vira constrangimento em vez de acolhimento.</span></li>
+        <li><span class="x">✕</span><span>A equipe é grande, tem turnos e unidades diferentes, e juntar todo mundo no mesmo horário é quase impossível.</span></li>
+      </ul>
+      <p class="virada">E se a sua ação de Outubro Rosa já estivesse <b>pronta, revisada e no tom certo</b>, esperando só você apertar o play?</p>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUÇÃO -->
+<section class="solucao">
+  <div class="w">
+    <div class="sol-head">
+      <span class="tag">A solução</span>
+      <h2>Uma palestra completa, <span class="it" style="color:var(--rosa-vivo)">em 10 minutos</span>, pra exibir quando e onde quiser</h2>
+      <p>Linguagem simples, direta e acolhedora. Cabe numa reunião de equipe ou na SIPAT, e todo mundo sai sabendo reconhecer os sinais e fazer o autoexame.</p>
+    </div>
+    <div class="player" id="player">
+      <div class="player-bg"></div>
+      <div class="player-selos"><span>10 min</span><span>Full HD</span><span>Pra toda a equipe</span></div>
+    </div>
+    <p class="player-legenda">Prévia de 1 minuto. A palestra completa tem cerca de 10.</p>
+    <div class="cta-bloco">
+      <a href="#oferta" class="cta">Quero garantir a palestra
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- QUEM APRESENTA -->
+<section class="quem">
+  <div class="w quem-grid">
+    <div class="quem-foto" role="img" aria-label="Gabriella Arcoverde, enfermeira do trabalho, apresentando a palestra"></div>
+    <div>
+      <span class="tag">Quem apresenta</span>
+      <h2>Gabriella Arcoverde, <span class="it rosa">enfermeira do trabalho</span></h2>
+      <p class="quem-bio">Há 15 anos cuidando da saúde de trabalhadores. Na palestra, ela fala como fala com as equipes: sem termos difíceis, com exemplos do dia a dia e um passo a passo que qualquer pessoa consegue repetir em casa.</p>
+      <blockquote>"Gente, nós temos 365 dias. [...] Um dia para o autoexame e um dia pro preventivo, para se cuidar."</blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- PILARES -->
+<section>
+  <div class="w">
+    <div class="pil-head">
+      <span class="tag">Os 3 pilares da palestra</span>
+      <h2>Muito além do laço rosa: <span class="it rosa">informação que salva</span></h2>
+    </div>
+    <div class="pilares">
+      <div class="pilar">
+        <span class="num">01</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z"/></svg></div>
+        <h3>Informação</h3>
+        <p>O que é o câncer de mama, os fatores de risco e os sinais de alerta que pedem médico na hora: caroço, pele em casca de laranja, secreção no mamilo e outros.</p>
+      </div>
+      <div class="pilar">
+        <span class="num">02</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Autoexame</h3>
+        <p>O passo a passo pra fazer em casa, uma vez por mês: no banho, deitada e na frente do espelho. E por que não fazer durante a menstruação.</p>
+      </div>
+      <div class="pilar">
+        <span class="num">03</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+        <h3>Prevenção</h3>
+        <p>Quando começar a mamografia, a consulta anual e os hábitos que ajudam a evitar cerca de 30% dos casos. Quanto mais cedo descobre, maior a chance de cura.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEÚDO -->
+<section class="conteudo">
+  <div class="w cont-grid">
+    <div class="sticky">
+      <span class="tag">Conteúdo programático</span>
+      <h2>O que a sua equipe vai <span class="it rosa">aprender</span></h2>
+      <p style="margin-top:18px;color:var(--suave);font-size:17px">Oito temas em cerca de 10 minutos, na ordem em que aparecem no vídeo.</p>
+      <a href="#oferta" class="cta" style="margin-top:12px">Quero esse conteúdo
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div>
+      <ol class="topicos">
+        <li>O que é o câncer de mama</li>
+        <li>Homens também têm: por que neles costuma ser descoberto mais tarde</li>
+        <li>Fatores de risco</li>
+        <li>Sinais de alerta que pedem médico imediatamente</li>
+        <li>Como é feito o diagnóstico</li>
+        <li>Autoexame passo a passo: no banho, deitada e no espelho</li>
+        <li>Mamografia, tratamento e hábitos que previnem</li>
+        <li>Mitos e verdades</li>
+      </ol>
+      <p class="nota">O conteúdo pode ser adaptado ao perfil da empresa e do público, mediante alinhamento prévio.</p>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section>
+  <div class="w" style="text-align:center">
+    <span class="tag">Simples assim</span>
+    <h2>Da compra à exibição em <span class="it rosa">3 passos</span></h2>
+    <div class="passos">
+      <div class="passo"><div class="n">1</div><h3>Garanta sua palestra</h3><p>Compra rápida e segura pela Kiwify, no cartão, PIX ou boleto.</p></div>
+      <div class="passo"><div class="n">2</div><h3>Receba o acesso</h3><p>Depois da confirmação do pagamento, o vídeo e os materiais chegam no seu e-mail.</p></div>
+      <div class="passo"><div class="n">3</div><h3>Exiba para a equipe</h3><p>Use o texto pronto para divulgar a ação e dê o play no dia que for melhor pra você.</p></div>
+    </div>
+    <div class="usos">
+      <span>📅 Reuniões de equipe</span><span>🦺 SIPAT</span><span>💬 Endomarketing</span><span>📺 TV corporativa</span><span>💻 Intranet e canais internos</span><span>🤝 Integração de novos colaboradores</span>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARAÇÃO -->
+<section class="comparar">
+  <div class="w">
+    <div style="text-align:center">
+      <span class="tag">Por que em vídeo?</span>
+      <h2>Mesma mensagem, <span class="it rosa">sem complicação</span></h2>
+    </div>
+    <div class="tabela">
+      <div class="col col-a">
+        <h3>Palestra presencial</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>Custo de palestrante, deslocamento e estrutura</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>Depende da agenda de outra pessoa</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>Acontece uma vez, num único horário</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>Quem está em outro turno fica de fora</li>
+        </ul>
+      </div>
+      <div class="col col-b">
+        <span class="selo">Recomendado</span>
+        <h3>Palestra em vídeo DUO SST</h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Pagamento único de R$ 79,90</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Cerca de 10 minutos, pronta pra exibir no dia que você escolher</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Pode ser exibida em vários momentos e unidades</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Apresentada por uma enfermeira do trabalho</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BÔNUS -->
+<section class="bonus" id="bonus">
+  <div class="w">
+    <div class="bonus-head">
+      <span class="tag">Bônus pra quem compra</span>
+      <h2>A ação completa, <span class="it rosa">do convite ao registro</span></h2>
+      <p>Além do vídeo, você recebe o material pronto pra divulgar o Outubro Rosa na empresa e a lista pra registrar quem participou.</p>
+    </div>
+    <div class="bonus-grid">
+      <div class="bonus-card">
+        <div class="bonus-img" role="img" aria-label="Cartaz e post da campanha"><span class="rot">Bônus 1</span><img src="assets/bonus-cartaz.jpg" alt="" loading="lazy"><img src="assets/bonus-cartaz.jpg" alt="" loading="lazy" style="width:30%;opacity:.9"></div>
+        <div class="bonus-txt">
+          <h3>Kit de divulgação da campanha</h3>
+          <p>A mesma arte em três formatos, com os sinais de alerta e a orientação de procurar o médico.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Cartaz A1 pra parede do refeitório ou da portaria</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Folheto A5 pra imprimir e entregar</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Post pronto pra mandar no WhatsApp da equipe</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bonus-card">
+        <div class="bonus-img" role="img" aria-label="Lista de presença da palestra"><span class="rot">Bônus 2</span><img class="um" src="assets/bonus-lista.jpg" alt="" loading="lazy"></div>
+        <div class="bonus-txt">
+          <h3>Lista de presença pronta</h3>
+          <p>Pra ação não ficar só na lembrança: fica registrada no histórico de saúde e segurança da empresa.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Campos de empresa, data, local e responsável</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Nome, CPF ou matrícula, setor e assinatura de cada participante</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Em PDF pra imprimir e em Excel pra preencher no computador</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cta-bloco">
+      <a href="#oferta" class="cta">Quero a palestra com os bônus
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="oferta" id="oferta">
+  <div class="w of-grid">
+    <div class="of-txt">
+      <span class="tag">Sua empresa cuidando de quem faz ela acontecer</span>
+      <h2>Mostre que a sua empresa <span class="it" style="color:var(--rosa-vivo)">se importa</span></h2>
+      <p style="margin-top:18px">Uma ação de Outubro Rosa bem feita fortalece a cultura de cuidado, aproxima a equipe e demonstra compromisso real com saúde, bem-estar e inclusão.</p>
+      <div class="of-foto" role="img" aria-label="Duas colegas de trabalho se apoiando, uma com laço rosa"></div>
+    </div>
+    <div>
+      <div class="card">
+        <span class="faixa">🎀 Oferta Outubro Rosa</span>
+        <h3>Tudo o que você recebe</h3>
+        <ul class="kit">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><div><b>Vídeo completo da palestra</b><small>Cerca de 10 minutos, Full HD, com Gabriella Arcoverde</small></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><div><b>Texto pronto de divulgação</b><small>Para convidar a equipe pela intranet, e-mail ou WhatsApp</small></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg><div><b>Mensagem de encerramento</b><small>Com incentivo ao cuidado e à busca por orientação profissional</small></div></li>
+          <li class="b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg><div><b>Kit de divulgação</b><small>Cartaz A1, folheto A5 e post pro WhatsApp</small></div></li>
+          <li class="b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></svg><div><b>Lista de presença</b><small>Em PDF e Excel, pra registrar quem participou</small></div></li>
+        </ul>
+        <div class="card-preco">
+          <span class="de">De R$ 99,90 por apenas</span>
+          <span class="por"><small>R$</small>79,90</span>
+          <span class="obs">Pagamento único · cartão, PIX ou boleto</span>
+        </div>
+        <a href="#" class="cta cta-grande" data-checkout>Comprar agora
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <div class="micro">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Compra 100% segura</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Processado pela Kiwify</span>
+        </div>
+        <div class="garantia">
+          <div class="sel"><b>7</b><span>dias</span></div>
+          <p><b>Garantia incondicional de 7 dias.</b> Se a palestra não for o que você esperava, peça o reembolso dentro do prazo e receba 100% do valor de volta.</p>
+        </div>
+      </div>
+      <p class="perso">Quer o vídeo com o nome e a identidade da sua empresa? <a href="#" class="js-whats">Fale com a gente no WhatsApp</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="w">
+    <div style="text-align:center">
+      <span class="tag">Dúvidas frequentes</span>
+      <h2>Ficou alguma <span class="it rosa">dúvida?</span></h2>
+    </div>
+    <div class="faq">
+      <details><summary>Como eu recebo a palestra?</summary><p>Assim que o pagamento é confirmado, a Kiwify libera o acesso no e-mail informado na compra. No PIX e no cartão a confirmação costuma ser rápida; no boleto pode levar até 3 dias úteis.</p></details>
+      <details><summary>Posso exibir para toda a equipe?</summary><p>Sim. A palestra foi feita para exibição interna na sua empresa: reuniões, SIPAT, ações de endomarketing, TV corporativa ou canais internos.</p></details>
+      <details><summary>Quanto tempo dura?</summary><p>Cerca de 10 minutos. Cabe numa reunião de equipe ou dentro da programação da SIPAT.</p></details>
+      <details><summary>Serve para homens também?</summary><p>Sim, e esse é um dos pontos da palestra. Homens também podem ter câncer de mama, e neles a doença costuma ser descoberta mais tarde, porque quase ninguém faz o autoexame. A Gabriella explica isso e ensina o passo a passo pra todos.</p></details>
+      <details><summary>Quem apresenta a palestra?</summary><p>Gabriella Arcoverde, enfermeira do trabalho com 15 anos de profissão.</p></details>
+      <details><summary>Dá para colocar o nome e a logo da minha empresa?</summary><p>Sim, mediante alinhamento prévio. A personalização é combinada à parte. Fale com a gente pelo WhatsApp e explique o que você precisa.</p></details>
+      <details><summary>Como recebo os bônus?</summary><p>Junto com o vídeo, na mesma área de acesso da Kiwify: o cartaz A1, o folheto A5, o post pro WhatsApp e a lista de presença em PDF e Excel.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. Se não ficar satisfeito, solicite o reembolso pela própria Kiwify dentro desse prazo e recebe o valor integral de volta.</p></details>
+      <details><summary>A palestra substitui uma consulta médica?</summary><p>Não. O conteúdo é educativo e incentiva justamente a busca por orientação profissional. Ele não substitui consulta, diagnóstico ou orientação médica individualizada.</p></details>
+      <details><summary>Preciso emitir nota fiscal para a empresa?</summary><p>A compra é feita pela Kiwify, que emite o comprovante da transação. Se a sua empresa precisar de algo específico, fale com a gente pelo WhatsApp antes de comprar.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="w">
+    <h2>Outubro já começou. Sua equipe merece essa conversa.</h2>
+    <p>Leve o Outubro Rosa para a sua empresa com uma iniciativa informativa, humana e alinhada ao cuidado com as pessoas.</p>
+    <a href="#" class="cta cta-grande" data-checkout>Quero a palestra por R$ 79,90
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="micro">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Garantia de 7 dias</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Acesso pelo e-mail</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg>Pagamento único</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="w">
+    <p class="aviso">A palestra tem caráter educativo e não substitui consulta, diagnóstico ou orientação médica individualizada.</p>
+    DUO SST SEGURANCA DO TRABALHO LTDA · CNPJ 64.766.204/0001-10 · Sete Lagoas/MG<br>
+    <a href="https://www.instagram.com/duo_sst" target="_blank" rel="noopener">@duo_sst</a>
+  </div>
+</footer>
+
+<div class="barra" id="barra">
+  <div><s>De R$ 99,90</s><b>R$ 79,90</b></div>
+  <a href="#" class="cta" data-checkout>Comprar agora</a>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+// ===== preencher quando chegar =====
+const CHECKOUT_URL = "https://pay.kiwify.com.br/S6nLxLd";   // checkout na Kiwify da DUO (22/10; o antigo 75ZTZOb era de outra conta)
+const VIDEO_EMBED = "assets/previa.mp4";   // embed da prévia (YouTube/Vimeo) ou arquivo .mp4
+const WHATSAPP = "5531990929406"; // comercial DUO (mesmo de COMERCIAL_NUMBER em js/main.js)
+// ===================================
+
+(function () {
+  const toast = document.getElementById("toast"); let t;
+  function aviso(m) { toast.textContent = m; toast.classList.add("on"); clearTimeout(t); t = setTimeout(() => toast.classList.remove("on"), 4200); }
+
+  document.querySelectorAll("[data-checkout]").forEach(b => {
+    if (CHECKOUT_URL) { b.href = CHECKOUT_URL; return; }
+    b.addEventListener("click", e => { e.preventDefault(); aviso("Rascunho: este botão vai abrir o checkout assim que o produto for cadastrado."); });
+  });
+
+  const msg = "Olá, DUO SST! Vi a palestra de Outubro Rosa e quero saber sobre a versão personalizada com a identidade da minha empresa.";
+  document.querySelectorAll(".js-whats").forEach(a => { a.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`; a.target = "_blank"; a.rel = "noopener"; });
+
+  if (VIDEO_EMBED) {
+    document.getElementById("player").innerHTML = /\.mp4($|\?)/.test(VIDEO_EMBED)
+      ? `<video src="${VIDEO_EMBED}" poster="assets/gabriella-capa.jpg" controls playsinline preload="metadata"></video>`
+      : `<iframe src="${VIDEO_EMBED}" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Prévia da palestra Outubro Rosa"></iframe>`;
+  }
+
+  const barra = document.getElementById("barra"), hero = document.querySelector(".hero"), oferta = document.getElementById("oferta");
+  function checar() {
+    const r = oferta.getBoundingClientRect();
+    barra.classList.toggle("on", hero.getBoundingClientRect().bottom < 0 && !(r.top < innerHeight && r.bottom > 0));
+  }
+  addEventListener("scroll", checar, { passive: true }); checar();
+})();
+</script>
+<script>
+(function () {
+  const reduz = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.documentElement.classList.add("js");
+
+  // hero entra em sequência
+  requestAnimationFrame(() => setTimeout(() => document.querySelector(".hero").classList.add("ok"), 60));
+
+  // preço do topo "cai" de 99,90 para 79,90
+  const por = document.querySelector(".hero .por");
+  if (por && !reduz) {
+    const fim = 79.90, ini = 99.90, t0 = performance.now() + 700, dur = 1100;
+    const fmt = v => "<small>R$</small>" + v.toFixed(2).replace(".", ",");
+    por.innerHTML = fmt(ini);
+    (function passo(t) {
+      const k = Math.min(1, Math.max(0, (t - t0) / dur)), e = 1 - Math.pow(1 - k, 3);
+      por.innerHTML = fmt(ini + (fim - ini) * e);
+      if (k < 1) requestAnimationFrame(passo);
+    })(performance.now());
+  }
+
+  // entrada ao rolar
+  const grupos = [
+    [".tag, section h2, .sol-head p, .pil-head, .virada, .nota", ""],
+    [".dor-foto, .of-foto", "rv-esq"],
+    [".card", "rv-dir"],
+    [".dores li, .pilar, .topicos li, .passo, .usos span, .col, .faq details, .player, .cta-bloco", ""]
+  ];
+  const alvos = [];
+  grupos.forEach(([sel, extra]) => document.querySelectorAll(sel).forEach(el => {
+    if (el.closest(".hero") || el.classList.contains("rv")) return;
+    el.classList.add("rv"); if (extra) el.classList.add(extra); alvos.push(el);
+  }));
+  alvos.forEach(el => {
+    const irmaos = [...el.parentElement.children].filter(c => c.classList.contains("rv"));
+    const i = irmaos.indexOf(el); if (i > 0) el.style.setProperty("--d", Math.min(i * 0.09, 0.6) + "s");
+  });
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target; el.classList.add("in"); io.unobserve(el);
+    // depois de entrar, tira o atraso pra o hover responder na hora
+    setTimeout(() => el.style.removeProperty("--d"), 1400);
+  }), { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
+  alvos.forEach(el => io.observe(el));
+  const ioSec = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && e.target.classList.add("in-view")), { threshold: 0.3 });
+  document.querySelectorAll("section").forEach(s => ioSec.observe(s));
+
+  const mouseFino = matchMedia("(pointer: fine)").matches;
+  if (!mouseFino || reduz) return;
+
+  // pilares e cartão de oferta inclinam com o mouse
+  document.querySelectorAll(".pilar, .card").forEach(el => {
+    const forca = el.classList.contains("card") ? 4 : 9;
+    el.addEventListener("mousemove", e => {
+      const r = el.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+      el.style.setProperty("--mx", x * 100 + "%"); el.style.setProperty("--my", y * 100 + "%");
+      el.style.transform = `rotateX(${(0.5 - y) * forca}deg) rotateY(${(x - 0.5) * forca}deg) translateY(-6px)`;
+    });
+    el.addEventListener("mouseleave", () => { el.style.transform = ""; });
+  });
+
+})();
+</script>
+</body>
+</html>

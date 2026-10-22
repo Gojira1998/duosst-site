@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treinamento | DUO SST</title>
+<link rel="icon" type="image/png" href="assets/logo-d.png">
+<meta name="description" content="Detalhes do treinamento NR: conteúdo programático, carga horária e formato.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try{if(localStorage.getItem("duo-tema")==="escuro")document.documentElement.dataset.theme="dark"}catch(e){}</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">
+      <img class="logo-cor" src="assets/logo.png" alt="DUO SST · Consultoria, meio ambiente, capacitação e perícias">
+      <img class="logo-prata" src="assets/logo-prata.png" alt="DUO SST · Consultoria, meio ambiente, capacitação e perícias">
+    </a>
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="Abrir menu">&#9776;</button>
+    <nav class="main-nav">
+      <a href="index.html#servicos">Serviços</a>
+      <a href="cursos.html">Treinamentos</a>
+      <a href="palestras.html">Palestras</a>
+      <a href="index.html#sobre">Sobre</a>
+      <a href="index.html#cadastro" data-whats="geral" class="nav-cta">Fale conosco</a>
+    </nav>
+  </div>
+</header>
+
+<div id="course-detail"></div>
+
+<section class="lead-section" id="cadastro">
+  <div class="wrap">
+    <div class="lead-grid">
+      <div>
+        <span class="badge">Cadastro rápido</span>
+        <h2>Vamos confirmar a próxima turma</h2>
+        <p>Deixa seu contato que a DUO SST te responde direto no WhatsApp com data, formato e o que sua empresa precisa.</p>
+      </div>
+      <form class="lead-form" id="lead-form" onsubmit="return sendLead('lead-form')">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+        <label for="whatsapp">WhatsApp</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(31) 9xxxx-xxxx" required>
+
+        <label for="curso">Curso de interesse</label>
+        <select id="curso" name="curso"></select>
+
+        <button type="submit" class="btn btn-primary">Enviar pelo WhatsApp</button>
+        <p class="fine-print">Você será direcionado ao WhatsApp da DUO SST com sua mensagem pronta.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <img class="footer-logo logo-cor" src="assets/logo-escuro.png" alt="DUO SST">
+        <img class="footer-logo logo-prata" src="assets/logo-prata.png" alt="DUO SST">
+        <p>Soluções em Segurança do Trabalho e Engenharia: treinamentos NR, palestras, assistência técnica pericial e gestão ambiental.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="index.html#servicos">Serviços</a></li>
+          <li><a href="cursos.html">Treinamentos</a></li>
+          <li><a href="palestras.html">Palestras</a></li>
+          <li><a href="pericias.html">Assistência pericial</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="index.html#cadastro" data-whats="geral">WhatsApp (31) 99092-9406</a></li>
+          <li><a href="https://www.instagram.com/duo_sst" target="_blank" rel="noopener">@duo_sst</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 DUO SST. Todos os direitos reservados.</span>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="tema-toggle" aria-label="Alternar modo noturno" aria-pressed="false" onclick="alternarTema()"><svg class="ico-lua" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="ico-sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/></svg></button>
+<a class="whats-float" data-whats="geral" href="index.html#cadastro" aria-label="Fale conosco no WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg><span>Dúvidas? Fale conosco</span></a>
+
+<script src="js/icons.js"></script>
+<script src="js/courses-data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const sel = document.getElementById("curso");
+    if (sel) {
+      let opts = `<option>Selecione um curso</option>`;
+      Object.keys(COURSES).forEach((slug) => {
+        const c = COURSES[slug];
+        opts += `<option>${c.codigo} · ${c.titulo}</option>`;
+      });
+      opts += `<option>Perícia judicial</option><option>Gestão ambiental</option>`;
+      sel.innerHTML = opts;
+    }
+  });
+</script>
+</body>
+</html>

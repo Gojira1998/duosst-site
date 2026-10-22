@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Fraunces:ital,opsz,wght@1,9..144,600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;box-sizing:border-box}
+html,body{width:300px;height:250px;overflow:hidden}
+.c{position:relative;width:300px;height:250px;background:#3B0F2A;color:#fff;font-family:Inter,sans-serif;overflow:hidden}
+.foto{position:absolute;inset:0;background:url(../assets/hero.jpg) 72% center/cover}
+.c::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(43,10,31,.97) 0%,rgba(52,13,37,.88) 50%,rgba(59,15,42,.35) 100%)}
+.in{position:absolute;inset:0;z-index:2;padding:18px 18px 16px;display:flex;flex-direction:column}
+.tag{display:inline-flex;align-items:center;gap:5px;align-self:flex-start;background:#E5337A;font-size:9px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;padding:4px 8px;border-radius:999px}
+.tag svg{width:10px;height:10px}
+h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:31px;line-height:.95;letter-spacing:-.03em;margin-top:12px}
+h1 em{font-family:Fraunces,serif;font-style:italic;font-weight:600;color:#FF5C9A;letter-spacing:-.01em;display:block;font-size:30px}
+.sub{font-size:11px;font-weight:700;color:#F6D6E0;margin-top:8px;line-height:1.3}
+.base{margin-top:auto;display:flex;align-items:center;justify-content:space-between}
+.marca{display:flex;align-items:center;gap:6px;font-size:9.5px;font-weight:800;color:#F3CFDD}
+.marca img{width:24px;background:#fff;border-radius:6px;padding:2px}
+.play{position:absolute;right:26px;top:158px;z-index:2;width:52px;height:52px;border-radius:50%;background:#E5337A;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 8px rgba(229,51,122,.3),0 0 0 16px rgba(229,51,122,.12)}
+.play svg{width:20px;height:20px;margin-left:4px}
+.laco{position:absolute;right:18px;top:16px;z-index:2;width:34px;height:auto}
+</style></head><body>
+<div class="c"><div class="foto"></div>
+<svg class="laco" viewBox="0 0 40 56" fill="#FF5C9A"><path d="M20 30C14 37 9 45 7 54l7-3 4 5c1-8 2-15 2-20z"/><path d="M20 30c6 7 11 15 13 24l-7-3-4 5c-1-8-2-15-2-20z" fill="#E5337A"/><path d="M20 30c-5-5-9-11-9-16a9 9 0 0 1 18 0c0 5-4 11-9 16zm0-7c3-3 4-6 4-9a4 4 0 0 0-8 0c0 3 1 6 4 9z"/></svg>
+<div class="play"><svg viewBox="0 0 24 24" fill="#fff"><path d="M7 4.5v15l13-7.5z"/></svg></div>
+<div class="in">
+  <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><rect x="2" y="5" width="20" height="14" rx="2"/></svg>Palestra em vídeo</span>
+  <h1>Outubro Rosa<em>na sua empresa</em></h1>
+  <p class="sub">Informação, prevenção<br>e acolhimento para a equipe</p>
+  <div class="base"><span class="marca"><img src="../assets/logo.png">DUO SST</span></div>
+</div></div></body></html>
