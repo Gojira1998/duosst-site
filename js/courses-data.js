@@ -80,7 +80,7 @@ const COURSES = {
         ],
       },
     ],
-    nota: "Existe também a versão Supervisor de Entrada (carga horária maior, com módulos extras de combate a incêndio). Turma presencial divulgada no Instagram @duo_sst.",
+    nota: "Existe também a versão Supervisor de Entrada (carga horária maior, com módulos extras de combate a incêndio). Turma presencial divulgada no Instagram @duosstoficial.",
     imagemHero: "assets/cursos/nr-33-hero.png",
     imagemConteudo: "assets/cursos/nr-33-conteudo.png",
     preco: "R$ 199,00",

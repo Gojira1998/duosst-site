@@ -382,7 +382,7 @@ function renderCourseDetail() {
          ${iconSvg("camera", 30)}
          <div>
            <strong>Treinamentos em ação</strong>
-           <p>Acompanhe as turmas e o dia a dia dos treinamentos da DUO SST no <a href="https://www.instagram.com/duo_sst" target="_blank" rel="noopener">Instagram @duo_sst</a>.</p>
+           <p>Acompanhe as turmas e o dia a dia dos treinamentos da DUO SST no <a href="https://www.instagram.com/duosstoficial" target="_blank" rel="noopener">Instagram @duosstoficial</a>.</p>
          </div>
        </div>`
     : "";
