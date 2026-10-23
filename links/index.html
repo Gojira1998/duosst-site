@@ -95,6 +95,11 @@
   .box.destaque.roxo .seta{background:#8A4FD8}
   .box.destaque.roxo .preco s{color:#B9ADD6}
   .box.destaque.roxo .preco span{color:#6F38BE}
+  .cta{margin-top:auto;display:block;text-align:center;font-weight:800;font-size:13.5px;padding:10px 10px;border-radius:999px;color:#fff;white-space:nowrap}
+  .cta.laranja{background:var(--laranja)}
+  .cta.grafite{background:var(--grafite)}
+  .box:hover .cta.laranja{background:#D06A12}
+  .box:hover .cta.grafite{background:var(--grafite-dark)}
   .play{position:absolute;right:10px;bottom:10px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:0 0 0 6px rgba(255,255,255,.22)}
   .play svg{width:16px;height:16px;color:var(--rosa);margin-left:3px}
 
@@ -176,7 +181,7 @@
       <div class="corpo">
         <h2>Treinamentos NR com certificado</h2>
         <p>17 cursos online. Comece hoje, no seu ritmo.</p>
-        <span class="seta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <span class="cta laranja">Ver os cursos</span>
       </div>
     </a>
 
@@ -188,7 +193,7 @@
       <div class="corpo">
         <h2>Turma na sua empresa</h2>
         <p>Treinamento in company com parte prática. Peça um orçamento no WhatsApp.</p>
-        <span class="seta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .3-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg></span>
+        <span class="cta grafite">Falar com a gente</span>
       </div>
     </a>
 
@@ -209,7 +214,7 @@
 const LINKS = {
   outubroRosa: "../outubro-rosa/index.html",         // página de vendas (mesma pasta do site)
   coloUtero: "../colo-do-utero/index.html",          // página de vendas da palestra do colo do útero
-  treinamentos: "https://duosst.formasegead.com",    // loja atual dos cursos EAD
+  treinamentos: "../cursos.html",                    // página de cursos do próprio site
   whatsPresencial: "5531990929406",                  // comercial DUO (31) 99092-9406
   site: "https://duosst.com.br",                     // domínio próprio (22/10)
 };
