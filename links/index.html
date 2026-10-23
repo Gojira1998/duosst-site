@@ -26,7 +26,7 @@
   html{-webkit-text-size-adjust:100%}
   body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;
     padding:0 16px calc(32px + env(safe-area-inset-bottom))}
-  .col{max-width:440px;margin:0 auto}
+  .col{max-width:1080px;margin:0 auto}
   a{color:inherit}
 
   /* topo */
@@ -34,6 +34,7 @@
       linear-gradient(135deg,var(--grafite-dark) 0%,var(--grafite) 62%,var(--laranja) 150%);position:relative;overflow:hidden}
   .capa::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(-45deg,rgba(255,255,255,.06) 0 14px,transparent 14px 28px)}
   .capa .mono{position:absolute;right:16px;top:calc(14px + env(safe-area-inset-top));color:rgba(255,255,255,.75)}
+  .perfil,.acoes,.titulo-sec{max-width:440px;margin-left:auto;margin-right:auto}
   .perfil{display:flex;flex-direction:column;align-items:center;text-align:center;margin-top:-58px;position:relative}
   .logo{width:112px;height:112px;border-radius:24px;background:#fff;border:4px solid var(--bg);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px -14px rgba(24,24,24,.55)}
   .logo img{width:72px;height:auto}
@@ -55,23 +56,25 @@
   .btn.site:hover{background:var(--grafite);color:#fff}
   .btn:active{transform:scale(.98)}
   .btn:focus-visible{outline:3px solid var(--laranja-claro);outline-offset:3px}
-  .titulo-sec{margin:30px 0 0;text-align:center;color:var(--sub)}
+  .titulo-sec{margin-top:30px;margin-bottom:0;text-align:center;color:var(--sub)}
 
   /* caixas */
-  .links{display:grid;gap:14px;margin-top:12px}
-  .box{display:block;text-decoration:none;background:var(--card);border:1px solid var(--linha);border-radius:16px;overflow:hidden;
+  .links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px;align-items:stretch}
+  @media (min-width:900px){.links{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
+  @media (max-width:340px){.links{grid-template-columns:1fr}}
+  .box{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--linha);border-radius:16px;overflow:hidden;
     transition:transform .15s ease,box-shadow .15s ease;position:relative}
   .box:hover{transform:translateY(-2px);box-shadow:0 14px 28px -18px rgba(24,24,24,.5)}
   .box:active{transform:scale(.99)}
   .box:focus-visible{outline:3px solid var(--laranja-claro);outline-offset:3px}
-  .box .foto{aspect-ratio:16/9;background-size:cover;background-position:center;position:relative}
-  .box .corpo{padding:14px 16px 16px;display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:center}
-  .box h2{margin:0;font-size:18px;line-height:1.25;font-weight:700}
-  .box p{margin:0;font-size:14px;color:var(--sub);line-height:1.45;grid-column:1}
-  .seta{grid-row:1/span 2;grid-column:2;width:40px;height:40px;border-radius:50%;background:var(--grafite);color:#fff;display:flex;align-items:center;justify-content:center}
-  .seta svg{width:18px;height:18px}
-  .etq{position:absolute;left:12px;top:12px;padding:5px 10px;border-radius:6px;font-weight:700;color:#fff}
-  .norma{position:absolute;right:12px;bottom:12px;background:rgba(24,24,24,.85);color:#fff;padding:5px 9px;border-radius:6px}
+  .box .foto{aspect-ratio:4/3;background-size:cover;background-position:center;position:relative}
+  .box .corpo{padding:12px 12px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+  .box h2{margin:0;font-size:16px;line-height:1.25;font-weight:700}
+  .box p{margin:0;font-size:13px;color:var(--sub);line-height:1.45}
+  .seta{margin-top:auto;align-self:flex-end;width:36px;height:36px;flex:none;border-radius:50%;background:var(--grafite);color:#fff;display:flex;align-items:center;justify-content:center}
+  .seta svg{width:17px;height:17px}
+  .etq{position:absolute;left:8px;top:8px;padding:4px 8px;font-size:10px;border-radius:6px;font-weight:700;color:#fff}
+  .norma{position:absolute;right:8px;bottom:8px;font-size:10px;background:rgba(24,24,24,.85);color:#fff;padding:5px 9px;border-radius:6px}
 
   /* destaque: Outubro Rosa */
   .box.destaque{border:0;background:var(--ameixa);color:#fff;box-shadow:0 18px 34px -20px rgba(59,15,42,.8)}
@@ -79,12 +82,21 @@
   .box.destaque .etq{background:var(--rosa)}
   .box.destaque p{color:#F3CFDD}
   .box.destaque .seta{background:var(--rosa)}
-  .box.destaque .preco{grid-column:1/-1;display:flex;align-items:baseline;gap:10px;margin-top:8px}
+  .box.destaque .preco{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 8px;margin-top:auto;padding-top:6px}
   .box.destaque .preco s{color:#D9B3C3;font-size:14px;white-space:nowrap}
-  .box.destaque .preco b{font-family:"Barlow Condensed",sans-serif;font-size:30px;line-height:1;white-space:nowrap}
-  .box.destaque .preco span{margin-left:auto;background:#fff;color:var(--rosa);font-weight:800;font-size:14px;padding:9px 14px;border-radius:999px;white-space:nowrap}
-  .play{position:absolute;right:14px;bottom:14px;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:0 0 0 6px rgba(255,255,255,.22)}
-  .play svg{width:19px;height:19px;color:var(--rosa);margin-left:3px}
+  .box.destaque .preco b{font-family:"Barlow Condensed",sans-serif;font-size:28px;line-height:1;white-space:nowrap}
+  .box.destaque .preco span{flex:1 0 100%;text-align:center;background:#fff;color:var(--rosa);font-weight:800;font-size:13.5px;padding:9px 10px;border-radius:999px;white-space:nowrap}
+
+  /* destaque 2: palestra do colo do útero (cor da própria campanha) */
+  .box.destaque.roxo{background:#141B33;box-shadow:0 18px 34px -20px rgba(20,27,51,.8)}
+  .box.destaque.roxo .foto::after{background:linear-gradient(180deg,transparent 45%,rgba(20,27,51,.95))}
+  .box.destaque.roxo .etq{background:#8A4FD8}
+  .box.destaque.roxo p{color:#D9CCF5}
+  .box.destaque.roxo .seta{background:#8A4FD8}
+  .box.destaque.roxo .preco s{color:#B9ADD6}
+  .box.destaque.roxo .preco span{color:#6F38BE}
+  .play{position:absolute;right:10px;bottom:10px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:0 0 0 6px rgba(255,255,255,.22)}
+  .play svg{width:16px;height:16px;color:var(--rosa);margin-left:3px}
 
   .box.laranja .etq{background:var(--laranja)}
   .box.laranja .seta{background:var(--laranja)}
@@ -136,13 +148,26 @@
       </div>
       <div class="corpo">
         <h2>Palestra de Outubro Rosa pra sua empresa</h2>
-        <p>Cerca de 10 minutos com a enfermeira do trabalho Gabriella Arcoverde. Veja a prévia.</p>
-        <span class="seta" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <p>Cerca de 10 minutos com a enfermeira Gabriella Arcoverde. Veja a prévia.</p>
         <div class="preco"><s>R$ 99,90</s><b>R$ 79,90</b><span>Ver a palestra</span></div>
       </div>
     </a>
 
-    <!-- 2. Treinamentos NR (EAD) -->
+
+    <!-- 2. Página de vendas: Câncer do colo do útero -->
+    <a class="box destaque roxo" id="link-colo" href="#">
+      <div class="foto" style="background-image:url(assets/colo-do-utero.jpg);background-position:center 30%">
+        <span class="etq mono">Novo · Colo do útero</span>
+        <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg></span>
+      </div>
+      <div class="corpo">
+        <h2>Palestra sobre câncer do colo do útero</h2>
+        <p>7 minutos em vídeo com a enfermeira Gabriella Arcoverde. HPV, vacina e prevenção.</p>
+        <div class="preco"><s>R$ 99,90</s><b>R$ 79,90</b><span>Ver a palestra</span></div>
+      </div>
+    </a>
+
+    <!-- 3. Treinamentos NR (EAD) -->
     <a class="box laranja" id="link-treinamentos" href="#">
       <div class="foto" style="background-image:url(assets/treinamentos.jpg)">
         <span class="etq mono">EAD · R$ 199</span>
@@ -155,7 +180,7 @@
       </div>
     </a>
 
-    <!-- 3. Turmas presenciais / in company -->
+    <!-- 4. Turmas presenciais / in company -->
     <a class="box grafite" id="link-incompany" href="#" target="_blank" rel="noopener">
       <div class="foto" style="background-image:url(assets/incompany.jpg)">
         <span class="etq mono">Presencial</span>
@@ -183,6 +208,7 @@
 // ===== Links (trocar aqui) =====
 const LINKS = {
   outubroRosa: "../outubro-rosa/index.html",         // página de vendas (mesma pasta do site)
+  coloUtero: "../colo-do-utero/index.html",          // página de vendas da palestra do colo do útero
   treinamentos: "https://duosst.formasegead.com",    // loja atual dos cursos EAD
   whatsPresencial: "5531990929406",                  // comercial DUO (31) 99092-9406
   site: "https://duosst.com.br",                     // domínio próprio (22/10)
@@ -192,6 +218,7 @@ const LINKS = {
   const wpp = (msg) => `https://wa.me/${LINKS.whatsPresencial}?text=${encodeURIComponent(msg)}`;
   // sem o link publicado, aponta pra página local (útil pra testar no computador)
   document.getElementById("link-outubro-rosa").href = LINKS.outubroRosa || "../outubro-rosa/index.html";
+  document.getElementById("link-colo").href = LINKS.coloUtero;
   document.getElementById("link-treinamentos").href = LINKS.treinamentos;
   document.getElementById("link-incompany").href = wpp("Olá! Vim pelo Instagram e quero um orçamento de treinamento in company.");
   document.getElementById("link-whats").href = wpp("Olá! Vim pelo Instagram da DUO SST.");
